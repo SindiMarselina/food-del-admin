@@ -1,0 +1,34 @@
+.admin-dashboard {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  text-align: center;
+  max-height: fit-content;
+  
+}
+
+.admin-dashboard h2 {
+  margin-bottom: 20px;
+}
+
+.admin-dashboard p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.admin-dashboard button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #d32f2f;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admin-dashboard button:hover {
+  background: #b71c1c;
+}

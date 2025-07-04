@@ -1,12 +1,50 @@
-.navbar{
+/* Navbar utama tetap */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 8px 4%;
 }
-.navbar .logo{
-  width: max(10%,80px);
+
+.navbar .logo {
+  width: max(10%, 80px);
 }
-.navbar .profile{
-  width: 40px; 
+
+.navbar .profile {
+  width: 40px;
+  cursor: pointer; /* Supaya icon profile nunjuk kursor pointer */
+}
+
+/* Container untuk profil & dropdown */
+.profile-container {
+  position: relative;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 50px; /* Geser ke bawah dari ikon profile */
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tombol di dropdown */
+.dropdown-menu button {
+  padding: 10px 15px;
+  border: none;
+  background: #fff;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdown-menu button:hover {
+  background: #f0f0f0;
 }

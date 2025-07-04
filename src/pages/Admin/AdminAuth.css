@@ -1,0 +1,40 @@
+.admin-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.admin-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.admin-form input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.admin-form button {
+  width: 100%;
+  padding: 12px;
+  background: #d32f2f;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admin-form button:hover {
+  background: #b71c1c;
+}
+
+.admin-form button + button {
+  margin-top: 10px;
+}
