@@ -16,10 +16,10 @@ const Navbar = () => {
     setOpenMenu(false)
   }
 
-  const handleLogin = () => {
-    navigate('/admin/login')
-    setOpenMenu(false)
-  }
+  // const handleLogin = () => {
+  //   navigate('/admin/login')
+  //   setOpenMenu(false)
+  // }
 
   // const handleForgotPassword = () => {
   //   navigate('/admin/forgot-password')
@@ -32,10 +32,12 @@ const Navbar = () => {
   // }
 
   const handleLogout = () => {
-    localStorage.removeItem('adminToken')
-    alert('Logout berhasil')
-    navigate('/admin/login') // pastikan path-nya benar!
-    setOpenMenu(false)
+    if (window.confirm('Are you sure you want to logout?')) {
+      localStorage.removeItem('adminToken')
+      // alert('successfully logout')
+      navigate('/admin/login') // pastikan path-nya benar!
+      setOpenMenu(false)
+    }
   }
 
 
@@ -52,7 +54,7 @@ const Navbar = () => {
         {openMenu && (
           <div className='dropdown-menu'>
             <button onClick={handleRegister}>Register Admin</button>
-            <button onClick={handleLogin}>Login Admin</button>
+            {/* <button onClick={handleLogin}>Login Admin</button> */}
             {/* <button onClick={handleForgotPassword}>Forgot Password</button>
             <button onClick={handleResetPassword}>Reset Password</button> */}
             <button onClick={handleLogout}>Logout</button>

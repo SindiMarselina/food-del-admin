@@ -10,14 +10,14 @@ const AdminLogin = () => {
     password: ""
   });
 
-  // 👉 Submit Login
+  // Submit Login
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       const res = await axios.post("http://localhost:4000/api/admin/login", data);
       if (res.data.success) {
         localStorage.setItem("adminToken", res.data.token);
-        alert("Login berhasil");
+        alert("Successfully login");
         navigate("/admin/dashboard");
       } else {
         alert(res.data.message);
@@ -28,7 +28,7 @@ const AdminLogin = () => {
     }
   };
 
-  // 👉 Pindah ke Forgot Password
+  // Pindah ke Forgot Password
   const handleForgotPassword = () => {
     navigate("/admin/forgot-password");
   };
@@ -52,7 +52,7 @@ const AdminLogin = () => {
       />
       <button type="submit">Login</button>
 
-      {/* 👉 PENTING: type="button" agar TIDAK submit form */}
+      {/* PENTING: type="button" agar TIDAK submit form */}
       <button type="button" onClick={handleForgotPassword}>
         Forgot Password
       </button>

@@ -107,14 +107,14 @@ const Add = ({ url }) => {
               required
             >
               <option value="">-- Pilih Kategori --</option>
+              <option value="Box Hemat">Box Hemat</option>
               <option value="Box Sederhana">Box Sederhana</option>
-              <option value="Rolls">Rolls</option>
-              <option value="Dessert">Dessert</option>
-              <option value="Sandwich">Sandwich</option>
-              <option value="Cake">Cake</option>
-              <option value="Pure Veg">Pure Veg</option>
-              <option value="Pasta">Pasta</option>
-              <option value="Noodles">Noodles</option>
+              <option value="Box Istimewah">Box Istimewah</option>
+              <option value="Box Special">Box Special</option>
+              <option value="Paket Besek">Paket Besek</option>
+              <option value="Paket Tumpeng">Paket Tumpeng</option>
+              <option value="Paket Bento">Paket Bento</option>
+              <option value="Snacks">Snacks</option>
             </select>
           </div>
 
