@@ -14,4 +14,4 @@ export const assets ={
     parcel_icon
 }
 
-export const url = 'http://cateringwarungnasimarsel-backend.up.railway.app'
+export const url = 'https://cateringwarungnasimarsel-backend.up.railway.app'
